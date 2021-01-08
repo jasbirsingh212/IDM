@@ -10,16 +10,13 @@ let loggedIn = false;
 
 class App extends Component {
   
-  setlogged =(res) =>{
-    loggedIn=res
-  }
+  
   render() { 
     return (
       <div className="App">
-        <Header status={loggedIn}></Header>
-        <Switch setlogged={this.setlogged}>
-          {/* <Route path='/home' component={WelcomePage}></Route> */}
-          <Route path="/home" setlogged={this.setlogged(true)} component={WelcomePage} />
+        <Header ></Header>
+        <Switch>
+          <Route path="/home"  component={WelcomePage} />
           <Route path='/SignIn' component={Login}></Route>
           <Route path='/' exact component={SignUp}></Route>
         </Switch>

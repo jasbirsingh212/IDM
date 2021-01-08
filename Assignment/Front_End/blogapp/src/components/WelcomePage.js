@@ -3,11 +3,7 @@ import logo from "./../resources/logo512.png"
 
 function WelcomePage(props)
 {
-    if( props && props.location.state &&props.location.state.loggedIn)
-    {
-        let logged=props.location.state.loggedIn;
-        console.log(props);
-    }
+   
 
     return (
         <div id='home'>
