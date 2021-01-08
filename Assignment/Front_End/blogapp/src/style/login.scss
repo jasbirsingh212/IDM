@@ -1,0 +1,49 @@
+.signin-section {
+    margin-left: 25%;
+    margin-right: 25%;
+    background:lightgray;
+    margin-top: 90px;
+    text-align: center;
+    color:cadetblue;
+    #SigninForm{
+        width: 40%;
+        display: inline-block;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        
+        label{
+            margin-left: 10px;
+            font-size: 25px;
+            text-align: left;
+        }
+
+        input{
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: 20px;
+            margin-right:20px ;
+            height : 40px;
+        }
+
+        .btn{
+            margin: 20px 80px 20px 80px;
+            background: cadetblue;
+            color: white;
+            padding: 10px 5px 10px 5px;
+        }
+    }
+
+}
+
+.no-account{
+    p{
+        color: cadetblue;
+        font-weight: bold;
+        a{
+        color:black;
+        }
+    }
+}
