@@ -17,9 +17,9 @@ class App extends Component {
     return (
       <div className="App">
         <Header status={loggedIn}></Header>
-        <Switch>
+        <Switch setlogged={this.setlogged}>
           {/* <Route path='/home' component={WelcomePage}></Route> */}
-          <Route path="/home" setlogged={this.setlogged} component={WelcomePage} />
+          <Route path="/home" setlogged={this.setlogged(true)} component={WelcomePage} />
           <Route path='/SignIn' component={Login}></Route>
           <Route path='/' exact component={SignUp}></Route>
         </Switch>

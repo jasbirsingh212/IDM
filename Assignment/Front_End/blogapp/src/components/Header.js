@@ -39,6 +39,8 @@ class header extends Component {
     this.state = {  }
   }
   render() {
+
+    console.log(this.props.status)
     return (  
       <header className="header">
       <nav className="nav">

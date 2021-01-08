@@ -6,6 +6,7 @@ function WelcomePage(props)
     if( props && props.location.state &&props.location.state.loggedIn)
     {
         let logged=props.location.state.loggedIn;
+        console.log(props);
     }
 
     return (
